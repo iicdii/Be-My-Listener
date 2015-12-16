@@ -6,6 +6,11 @@
     "start": "react-native start"
   },
   "dependencies": {
-    "react-native": "^0.16.0"
+    "firebase": "^2.3.2",
+    "lodash": "^3.10.1",
+    "react-native": "^0.16.0",
+    "react-native-google-signin": "^0.2.3",
+    "react-native-icons": "^0.7.0",
+    "underscore": "^1.8.3"
   }
 }

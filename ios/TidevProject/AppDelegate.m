@@ -7,6 +7,7 @@
  * of patent rights can be found in the PATENTS file in the same directory.
  */
 
+#import "RNGoogleSignin.h"
 #import "AppDelegate.h"
 
 #import "RCTRootView.h"
@@ -15,6 +16,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  
   NSURL *jsCodeLocation;
 
   /**
@@ -54,4 +56,14 @@
   return YES;
 }
 
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation {
+  
+  return [RNGoogleSignin application:application
+                             openURL:url
+                   sourceApplication:sourceApplication
+                          annotation:annotation];
+}
 @end
